@@ -19,7 +19,7 @@
   import ProductSlider2 from '../components/UI/ProductSlider2';
   import Junctionbox from '../assets/Junctionbox.png';
   import Logo from '../assets/logo.png'; 
-  import banner from '../assets/banner.png';
+  import banner from '../assets/Banner.png';
   import banner2 from '../assets/Banner2.png';
   import { FaTruck, FaDollarSign, FaLock } from 'react-icons/fa'; // Import icons
 
