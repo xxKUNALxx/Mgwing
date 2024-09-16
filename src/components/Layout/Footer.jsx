@@ -31,17 +31,17 @@ const Footer = () => {
           {/* Contact Us Section */}
           <div className="space-y-4">
             <h2 className="text-2xl font-bold text-cyan-500 mb-2">Contact Us</h2>
-            <p className="text-sm text-gray-300">Plot No-297/3473, Twincity Township, Trisulia, Bhubaneswar, Odisha-754005</p>
+            <p className="text-sm text-gray-300">Twincity Township, Trisulia, Bhubaneswar, Odisha-754005</p>
             <p className="text-sm text-gray-300">Email: sales@mgwing.com</p>
             <p className="text-sm text-gray-300">For more info: info@mgwing.com </p>
-            <p className="text-sm text-gray-300">Phone: 9777481043 , 9777400976</p>
+            <p className="text-sm text-gray-300">Phone: +91 9777481043 ,+91 9777400976</p>
 
             {/* Social Media Icons */}
             <div className="flex space-x-4 mt-4">
-              <a href="#" className="text-gray-300 hover:text-cyan-500 transition-colors"><FaFacebookF /></a>
-              <a href="#" className="text-gray-300 hover:text-cyan-500 transition-colors"><FaTwitter /></a>
-              <a href="#" className="text-gray-300 hover:text-cyan-500 transition-colors"><FaInstagram /></a>
-              <a href="#" className="text-gray-300 hover:text-cyan-500 transition-colors"><FaLinkedinIn /></a>
+              <a href="https://www.facebook.com/profile.php?id=61565836200986" className="text-gray-300 hover:text-cyan-500 transition-colors"><FaFacebookF /></a>
+              <a href="https://x.com/MGWing_" className="text-gray-300 hover:text-cyan-500 transition-colors"><FaTwitter /></a>
+              <a href="https://www.instagram.com/mgwing_/" className="text-gray-300 hover:text-cyan-500 transition-colors"><FaInstagram /></a>
+              <a href="https://www.linkedin.com/in/reyansh-tripathy-a81497328" className="text-gray-300 hover:text-cyan-500 transition-colors"><FaLinkedinIn /></a>
             </div>
           </div>
         </div>
