@@ -58,24 +58,24 @@ const Home = () => {
     { title: 'Product 1', image: banner },
     { title: 'Product 2', image: banner2 },
   ];
-
+  
   const cardData = [
-    { title: 'Meters', image: Meter },
-    { title: 'Junction box', image: Junctionbox },
-    { title: 'Transformers', image: Transfromer },
-    { title: 'Cables', image: Cables },
-    { title: 'Lights', image: Lights },
-    { title: 'Speakers', image: Speakers },
-    { title: 'MCCB / MCB', image: Mccb },
+    { title: 'Measuring Instruments', image: Meter },
+    { title: 'Enclosures & Junction Boxes', image: Junctionbox },
+    { title: 'Transformers', image: Transfromer , desc:'Power & Distribution' },
+    { title: 'Wires & Cables', image: Cables },
+    { title: 'LED Lights', image: Lights , desc:'street & flood'},
+    { title: 'Public Address System', image: Speakers },
+    { title: 'Switch Gears', image: Mccb ,desc:'MCB & MCCB'},
     { title: 'Home Appliance', image: Fridge },
-    { title: 'Safety Equipment', image: Safety },
-    { title: 'Tools', image: Tools },
+    { title: 'Industrial Safety Products', image: Safety },
+    { title: 'Industrial Tools', image: Tools },
     { title: 'Bearings', image: Bearings },
-    { title: 'Computer', image: Computer },
-    { title: 'AC', image: Ac },
+    { title: 'Computer Servers & Printers ', image: Computer },
+    { title: 'AC & Cooling Units', image: Ac },
     { title: 'Television', image: TV },
     { title: 'Insulators', image: Insulators },
-    { title: 'Insulators', image: Insulators },
+    { title: 'Industrial Valves', image: Insulators },
   ];
 
   const products = [
@@ -120,7 +120,7 @@ return (
     <div className='p-5'>
       <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2'>
         {cardData.map((card, index) => (
-          <Card key={index} title={card.title} image={card.image} />
+          <Card key={index} title={card.title} image={card.image} desc={card.desc}/>
         ))}
       </div>
     </div>
