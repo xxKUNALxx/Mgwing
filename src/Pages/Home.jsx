@@ -21,7 +21,64 @@
   import Logo from '../assets/logo.png'; 
   import banner from '../assets/Banner.png';
   import banner2 from '../assets/Banner2.png';
+  
+  import img1 from '../assets/featured/1.png';
+  import img2 from '../assets/featured/2.png';
+  import img3 from '../assets/featured/3.png';
+  import img4 from '../assets/featured/4.png';
+  import img5 from '../assets/featured/5.png';
+  import img6 from '../assets/featured/6.png';
+  import img7 from '../assets/featured/7.png';
+  import img8 from '../assets/featured/8.png';
+  import img9 from '../assets/featured/9.png';
+
+  import img10 from '../assets/featured/10.png';
+  import img11 from '../assets/featured/11.png';
+  import img12 from '../assets/featured/12.png';
+  import img13 from '../assets/featured/13.png';
+  import img14 from '../assets/featured/14.png';
+  import img15 from '../assets/featured/15.png';
+  import img16 from '../assets/featured/16.png';
+  import img17 from '../assets/featured/17.png';
+  import img18 from '../assets/featured/18.png';
+  import img19 from '../assets/featured/19.png';
+
+  import img20 from '../assets/featured/20.png';
+  import img21 from '../assets/featured/21.png';
+  import img22 from '../assets/featured/22.png';
+  import img23 from '../assets/featured/23.png';
+  import img24 from '../assets/featured/24.png';
+  import img25 from '../assets/featured/25.png';
+  import img26 from '../assets/featured/26.png';
+  import img27 from '../assets/featured/27.png';
+  import img28 from '../assets/featured/28.png';
+  import img29 from '../assets/featured/29.png';
+
+  import img30 from '../assets/featured/30.png';
+  import img31 from '../assets/featured/31.png';
+  import img32 from '../assets/featured/32.png';
+  import img33 from '../assets/featured/33.png';
+  import img34 from '../assets/featured/34.png';
+  import img35 from '../assets/featured/35.png';
+  import img36 from '../assets/featured/36.png';
+  import img37 from '../assets/featured/37.png';
+  import img38 from '../assets/featured/38.png';
+  import img39 from '../assets/featured/39.png';
+  import img40 from '../assets/featured/40.png';
+  import img41 from '../assets/featured/41.png';
+  import img42 from '../assets/featured/42.png';
+  import img43 from '../assets/featured/43.png';
+  import img44 from '../assets/featured/44.png';
+  import img45 from '../assets/featured/45.png';
+  import img46 from '../assets/featured/46.png';
+  import img47 from '../assets/featured/47.png';
+  import img48 from '../assets/featured/48.png';
+
+
+
+  
   import { FaTruck, FaDollarSign, FaLock } from 'react-icons/fa'; // Import icons
+import ProductSlider3 from '../components/UI/ProductSlider3';
 
 
 
@@ -79,12 +136,62 @@ const Home = () => {
   ];
 
   const products = [
-    { name: 'Product 1', image: Fridge },
-    { name: 'Product 2', image: Fridge },
-    { name: 'Product 3', image: Fridge },
-    { name: 'Product 4', image: Fridge },
-    { name: 'Product 5', image: Fridge },
-    { name: 'Product 6', image: Fridge },
+    { name: 'Product 1', image: img1 },
+    { name: 'Product 2', image: img2 },
+    { name: 'Product 3', image: img3 },
+    { name: 'Product 4', image: img4 },
+    { name: 'Product 5', image: img5 },
+    { name: 'Product 6', image: img6 },
+    { name: 'Product 6', image: img7 },
+    { name: 'Product 6', image: img8 },
+    { name: 'Product 6', image: img9 },
+    { name: 'Product 6', image: img10 },
+    { name: 'Product 6', image: img11 },
+    { name: 'Product 6', image: img12 },
+    { name: 'Product 6', image: img13 },
+    { name: 'Product 6', image: img14 },
+    { name: 'Product 6', image: img15 },
+    { name: 'Product 6', image: img16 },
+  ];
+
+  const products1 = [
+    { name: 'Product 6', image: img17 },
+    { name: 'Product 6', image: img18 },
+    { name: 'Product 6', image: img19 },
+    { name: 'Product 6', image: img20 },
+    { name: 'Product 6', image: img21 },
+    { name: 'Product 6', image: img22 },
+    { name: 'Product 6', image: img23 },
+    { name: 'Product 6', image: img24 },
+    { name: 'Product 6', image: img25 },
+    { name: 'Product 6', image: img26 },
+    { name: 'Product 6', image: img27 },
+    { name: 'Product 6', image: img28 },
+    { name: 'Product 6', image: img29 },
+    { name: 'Product 6', image: img30 },
+    { name: 'Product 6', image: img31 },
+    { name: 'Product 6', image: img32 },
+
+
+  ];
+
+  const products2 = [
+    { name: 'Product 6', image: img33 },
+    { name: 'Product 6', image: img34 },
+    { name: 'Product 6', image: img35 },
+    { name: 'Product 6', image: img36 },
+    { name: 'Product 6', image: img37 },
+    { name: 'Product 6', image: img38 },
+    { name: 'Product 6', image: img39 },
+    { name: 'Product 6', image: img40 },
+    { name: 'Product 6', image: img41 },
+    { name: 'Product 6', image: img42 },
+    { name: 'Product 6', image: img43 },
+    { name: 'Product 6', image: img44 },
+    { name: 'Product 6', image: img45 },
+    { name: 'Product 6', image: img46 },
+    { name: 'Product 6', image: img47 },
+    { name: 'Product 6', image: img48 },
   ];
 
   // Render the preloader if isLoading is true
@@ -132,7 +239,11 @@ return (
     </div>
 
     <div className='p-6'>
-      <ProductSlider2 products={products} />
+      <ProductSlider2 products={products1} />
+    </div>
+
+    <div className='p-6'>
+      <ProductSlider3 products={products2} />
     </div>
 
     {/* Logo at the bottom right with a smaller black circle and larger logo */}

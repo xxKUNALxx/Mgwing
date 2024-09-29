@@ -1,3 +1,6 @@
+
+
+
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
@@ -6,7 +9,7 @@ import 'swiper/css/navigation';
 import { FaHeart } from 'react-icons/fa';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
-const ProductSlider2 = ({ products }) => {
+const ProductSlider3 = ({ products }) => {
   const handleMouseEnter = (swiper) => {
     swiper.autoplay.stop(); // Stop autoplay on hover
   };
@@ -26,10 +29,10 @@ const ProductSlider2 = ({ products }) => {
         }}
         loop={true} // Enable infinite looping
         autoplay={{
-          delay: 0, // Continuous autoplay with no delay
+          delay: 0, // Autoplay with no delay
           disableOnInteraction: false, // Keep autoplay running even after user interaction
         }}
-        speed={3000} // Slower transition speed for smooth, continuous scrolling
+        speed={5000} // Slower transition speed for smooth, continuous scrolling
         breakpoints={{
           640: { slidesPerView: 3 },
           768: { slidesPerView: 4 },
@@ -82,4 +85,4 @@ const ProductSlider2 = ({ products }) => {
   );
 };
 
-export default ProductSlider2;
+export default ProductSlider3;
