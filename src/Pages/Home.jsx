@@ -21,6 +21,8 @@
   import Logo from '../assets/logo.png'; 
   import banner from '../assets/Banner.png';
   import banner2 from '../assets/Banner2.png';
+  import banner3 from '../assets/banner3.png';
+
   
   import img1 from '../assets/featured/1.png';
   import img2 from '../assets/featured/2.png';
@@ -114,6 +116,7 @@ const Home = () => {
   const slides = [
     { title: 'Product 1', image: banner },
     { title: 'Product 2', image: banner2 },
+    { title: 'Product 2', image: banner3 },
   ];
   
   const cardData = [
