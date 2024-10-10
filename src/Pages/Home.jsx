@@ -21,12 +21,12 @@
   import Logo from '../assets/logo.png'; 
   import banner from '../assets/Banner.png';
   import banner2 from '../assets/Banner2.png';
-  import banner3 from '../assets/banner3.png';
+  import valves from '../assets/16.png';
 
   
-  import img1 from '../assets/featured/1.png';
-  import img2 from '../assets/featured/2.png';
-  import img3 from '../assets/featured/3.png';
+  // import img1 from '../assets/featured/1.png';
+  // import img2 from '../assets/featured/2.png';
+  // import img3 from '../assets/featured/3.png';
   import img4 from '../assets/featured/4.png';
   import img5 from '../assets/featured/5.png';
   import img6 from '../assets/featured/6.png';
@@ -116,7 +116,6 @@ const Home = () => {
   const slides = [
     { title: 'Product 1', image: banner },
     { title: 'Product 2', image: banner2 },
-    { title: 'Product 2', image: banner3 },
   ];
   
   const cardData = [
@@ -135,66 +134,66 @@ const Home = () => {
     { title: 'AC & Cooling Units', image: Ac },
     { title: 'Television', image: TV },
     { title: 'Insulators', image: Insulators },
-    { title: 'Industrial Valves', image: Insulators },
+    { title: 'Industrial Valves', image: valves },
   ];
 
   const products = [
-    { name: 'Product 1', image: img1 },
-    { name: 'Product 2', image: img2 },
-    { name: 'Product 3', image: img3 },
-    { name: 'Product 4', image: img4 },
-    { name: 'Product 5', image: img5 },
-    { name: 'Product 6', image: img6 },
-    { name: 'Product 6', image: img7 },
-    { name: 'Product 6', image: img8 },
-    { name: 'Product 6', image: img9 },
-    { name: 'Product 6', image: img10 },
-    { name: 'Product 6', image: img11 },
-    { name: 'Product 6', image: img12 },
-    { name: 'Product 6', image: img13 },
-    { name: 'Product 6', image: img14 },
-    { name: 'Product 6', image: img15 },
-    { name: 'Product 6', image: img16 },
+      // { name: 'Product 1', image: img1 },
+      // { name: 'Product 2', image: img2 },
+      // { name: 'Product 3', image: img3 },
+    { name: 'Lightning Arresters', image: img4 },
+    // { name: 'Product 5', image: img5 },
+    // { name: 'Product 6', image: img6 },
+    // { name: 'Product 6', image: img7 },
+    // { name: 'Product 6', image: img8 },
+    { name: 'Rescue & Discharge rods', image: img9 },
+    { name: 'Neutral Grounding Resistors', image: img10 },
+    { name: 'Float Cum Boost Charger', image: img11 },
+    { name: 'Isolators', image: img12 },
+    { name: 'Neutral Isolation Panel', image: img13 },
+    { name: 'Online UPS & Power Solutions', image: img14 },
+    // { name: 'Product 6', image: img15 },
+    // { name: 'Product 6', image: img16 },
   ];
 
   const products1 = [
-    { name: 'Product 6', image: img17 },
-    { name: 'Product 6', image: img18 },
-    { name: 'Product 6', image: img19 },
-    { name: 'Product 6', image: img20 },
-    { name: 'Product 6', image: img21 },
-    { name: 'Product 6', image: img22 },
-    { name: 'Product 6', image: img23 },
-    { name: 'Product 6', image: img24 },
-    { name: 'Product 6', image: img25 },
-    { name: 'Product 6', image: img26 },
-    { name: 'Product 6', image: img27 },
-    { name: 'Product 6', image: img28 },
-    { name: 'Product 6', image: img29 },
-    { name: 'Product 6', image: img30 },
-    { name: 'Product 6', image: img31 },
-    { name: 'Product 6', image: img32 },
+    // { name: 'Product 6', image: img17 },
+    { name: 'Connector Lugs', image: img18 },
+    { name: 'Electromagnetic Flow Meter', image: img19 },
+    { name: 'Sprinkler & Rain Guns', image: img20 },
+    { name: 'Electrical Gloves', image: img21 },
+    { name: 'Electro-Mechanical Tapes', image: img22 },
+    // { name: 'Product 6', image: img23 },
+    { name: 'Traffic & Road Safety Products', image: img24 },
+    { name: 'Loto Kits', image: img25 },
+    { name: 'Fire & Safety Products', image: img26 },
+    { name: 'Insulating Mats', image: img27 },
+    { name: 'Sling Webs', image: img28 },
+    { name: 'Alcohol Breath Analyzer', image: img29 },
+    { name: 'LED Search Light', image: img30 },
+    { name: 'Wireless Communication System', image: img31 },
+    { name: 'Optical Network System', image: img32 },
 
 
   ];
 
   const products2 = [
-    { name: 'Product 6', image: img33 },
-    { name: 'Product 6', image: img34 },
-    { name: 'Product 6', image: img35 },
-    { name: 'Product 6', image: img36 },
-    { name: 'Product 6', image: img37 },
-    { name: 'Product 6', image: img38 },
-    { name: 'Product 6', image: img39 },
-    { name: 'Product 6', image: img40 },
-    { name: 'Product 6', image: img41 },
-    { name: 'Product 6', image: img42 },
-    { name: 'Product 6', image: img43 },
-    { name: 'Product 6', image: img44 },
-    { name: 'Product 6', image: img45 },
-    { name: 'Product 6', image: img46 },
-    { name: 'Product 6', image: img47 },
-    { name: 'Product 6', image: img48 },
+    { name: 'Video Conferencing Endpoints', image: img33 },
+    { name: 'Security Control System', image: img34 },
+    { name: 'Body Cameras with facial recognition', image: img35 },
+    { name: 'Networking & Optical Fiber Cables', image: img36 },
+    { name: 'Netgear LAN Solutions', image: img37 },
+    { name: 'FOSC, Media Converters & SFP Modules', image: img38 },
+    { name: 'Neutral Isolation Panel', image: img39 },
+    { name: 'Welding Machine', image: img40 },
+    // { name: 'Product 6', image: img41 },
+    { name: 'Interactive Panels & Teaching Solution', image: img42 },
+    // { name: 'Product 6', image: img43 },
+    // { name: 'Product 6', image: img44 },
+    // { name: 'Product 6', image: img45 },
+    // { name: 'Product 6', image: img46 },
+    { name: 'FPO Storage Bins', image: img47 },
+    { name: 'Bio-Hazard Bags', image: img48 },
   ];
 
   // Render the preloader if isLoading is true

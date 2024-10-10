@@ -1,18 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { FaHeart } from 'react-icons/fa';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import Modal from './Modal';
 
 const ProductSlider2 = ({ products }) => {
+  const [isModalVisible, setModalVisible] = useState(false);
+
   const handleMouseEnter = (swiper) => {
     swiper.autoplay.stop(); // Stop autoplay on hover
   };
 
   const handleMouseLeave = (swiper) => {
     swiper.autoplay.start(); // Resume autoplay when no longer hovering
+  };
+
+  
+  const handleCardClick = () => {
+    setModalVisible(true); // Show modal when card is clicked
   };
 
   return (
@@ -78,6 +86,11 @@ const ProductSlider2 = ({ products }) => {
           display: none !important;
         }
       `}</style>
+                  {/* Modal for Under Maintenance */}
+                  <Modal
+        isVisible={isModalVisible}
+        onClose={() => setModalVisible(false)} // Hide modal when close button is clicked
+      />
     </div>
   );
 };

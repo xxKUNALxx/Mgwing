@@ -5,8 +5,10 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import logo1 from '../../assets/logo1.png';
 import Categories from '../UI/Categories'; 
 import Searchbar from './Searchbar';
+import Modal from '../UI/Modal';
 
 const Navbar = () => {
+  const [isModalVisible, setModalVisible] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -66,8 +68,16 @@ const Navbar = () => {
     };
   }, [dropdownOpen, searchOpen]);
 
+  const handleCardClick = () => {
+    setModalVisible(true); // Show modal when card is clicked
+  };
+
   return (
     <div className="w-full h-20 bg-blue-500 flex items-center px-4 lg:px-8 relative z-50">
+          <Modal
+        isVisible={isModalVisible}
+        onClose={() => setModalVisible(false)} // Hide modal when close button is clicked
+      />
       {/* Logo Section */}
       <Link to="/">
         <div className="flex-shrink-0 lg:size-28 md:size-28 sm:size-5">
@@ -86,7 +96,8 @@ const Navbar = () => {
           Home
         </Link>
         <Categories />
-        <Link to="/products" className="text-white hover:text-neutral-700">
+        <Link  className="text-white hover:text-neutral-700"
+         onClick={handleCardClick}>
           Products
         </Link>
         <Link to="/aboutus" className="text-white hover:text-neutral-700">
@@ -124,7 +135,7 @@ const Navbar = () => {
           {dropdownOpen && (
             <div className="absolute right-0 mt-2 w-48 bg-black text-white shadow-lg rounded-md z-50">
               <Link 
-                to="/admin" 
+                
                 className="block px-4 py-2 hover:bg-blue-400"
                 onClick={(e) => {
                   e.stopPropagation();
@@ -134,7 +145,7 @@ const Navbar = () => {
                 Admin Dashboard
               </Link>
               <Link 
-                to="/orders" 
+                
                 className="block px-4 py-2 hover:bg-blue-400"
                 onClick={(e) => {
                   e.stopPropagation();

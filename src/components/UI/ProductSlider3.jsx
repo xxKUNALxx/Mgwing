@@ -1,15 +1,15 @@
-
-
-
-import React from 'react';
+import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { FaHeart } from 'react-icons/fa';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import Modal from './Modal';
 
-const ProductSlider3 = ({ products }) => {
+const ProductSlider = ({ products }) => {
+  const [isModalVisible, setModalVisible] = useState(false);
+
   const handleMouseEnter = (swiper) => {
     swiper.autoplay.stop(); // Stop autoplay on hover
   };
@@ -17,6 +17,11 @@ const ProductSlider3 = ({ products }) => {
   const handleMouseLeave = (swiper) => {
     swiper.autoplay.start(); // Resume autoplay when no longer hovering
   };
+
+  const handleCardClick = () => {
+    setModalVisible(true); // Show modal when card is clicked
+  };
+
 
   return (
     <div className="relative">
@@ -54,7 +59,8 @@ const ProductSlider3 = ({ products }) => {
               />
               <div className="absolute inset-0 flex flex-col justify-end p-4 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity">
                 <h3 className="text-white text-sm font-semibold mb-2">{product.name}</h3>
-                <button className="text-xs px-3 py-1 w-full bg-cyan-500 text-black font-semibold rounded hover:bg-amber-500 transition">
+                <button className="text-xs px-3 py-1 w-full bg-cyan-500 text-black font-semibold rounded hover:bg-amber-500 transition"
+                 onClick={handleCardClick}>
                   Add to Cart
                 </button>
                 <button className="absolute top-2 right-2 text-red-500 hover:text-red-600 transition">
@@ -81,8 +87,14 @@ const ProductSlider3 = ({ products }) => {
           display: none !important;
         }
       `}</style>
+
+            {/* Modal for Under Maintenance */}
+            <Modal
+        isVisible={isModalVisible}
+        onClose={() => setModalVisible(false)} // Hide modal when close button is clicked
+      />
     </div>
   );
 };
 
-export default ProductSlider3;
+export default ProductSlider;
